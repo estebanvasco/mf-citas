@@ -1,0 +1,171 @@
+.k-modals{
+    display: none;
+    background: #FFFFFF;
+    width: 38%;
+    min-width: 513px;
+    max-width: 540px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    &__img-close{
+        position: absolute;
+        padding: 15px;
+        right: 0;
+        cursor: pointer;
+    }
+    &__hr{
+        width: 85%;
+        height: 0px;
+        border: 1px solid #0071A3;
+        opacity: 1;
+        margin: 0px auto;
+    }
+    &__hr-gray{
+        margin-top: -1.5px;
+        border: 1px solid #b2d3e23d;
+    }
+    &__hr-mobile{
+        display: none;
+    }
+    &__title-modal{
+        font-family: 'Proxima Nova', sans-serif;
+        letter-spacing: 0.36px !important;
+        color: #0071A3;
+        opacity: 1;
+        font-size: 24px !important;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    &__paragraph-modal{
+        margin: auto;
+        width: 85%;
+        text-align: left;
+        font-family: 'Proxima Nova', sans-serif;
+        letter-spacing: 0.21px;
+        color: #212121;
+        font-size: 14px !important;
+        margin-top: 25px;
+    }
+    &__section-buttons{
+        margin: 36px auto;
+        display: flex;
+        justify-content: space-evenly;
+        width: 85%;
+    }
+    &__section-button{
+        margin: 36px auto;
+        display: flex;
+        justify-content: center;
+        width: 85%;
+    }
+    &__primary-button{
+        height: 40px;
+        background: #0071A3;
+        color: #FFFFFF;
+        border-radius: 20px;
+        opacity: 1;
+        border: none;
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: bold;
+        padding: 0px 30px;
+        cursor: pointer;
+        font-size: 16px !important;
+        &:hover{
+            background-color: #002F87;
+        }
+    }
+    &__secondary-button{
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid #0071A3;
+        border-radius: 20px;
+        opacity: 1;
+        font-family: 'Proxima Nova', sans-serif;
+        font-weight: bold;
+        color:#0071A3;
+        padding: 0px 30px;
+        cursor: pointer;
+        font-size: 16px !important;
+        &:hover{
+            border: 1px solid #002F87;
+            color:#002F87;
+        }
+        &:active{
+            background: #002E58;
+            border: 1px solid #002E58;
+            color:#FFFFFF;
+        }
+    }
+}
+.k-modal--opened{
+    display: block;
+}
+
+$layout-breakpoint-mobile: 650px;
+
+@media (max-width: $layout-breakpoint-mobile) {
+
+    .k-modals{
+        display: none;
+        background: #FFFFFF;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        transform: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        border-radius: 36px 36px 0px 0px; 
+        &__hr{
+            display: none;
+        }
+        &__hr-gray{
+            display: none;
+        }
+        &__section-buttons{
+            display: grid;
+            justify-content: center;
+            gap: 35px;
+        }
+        &__img-close{
+            display: none;
+        }
+        &__hr-mobile{
+            display: block;
+            background: #D5D5D5;
+            width: 69px;
+            height: 5px;
+            margin: 30px auto;
+            border: none;
+            border-radius: 20px;
+        }
+    }
+    .k-modal--opened{
+        display: block;
+        animation: slide-in 0.3s ease-in;
+    }
+    @keyframes slide-in {
+        from {
+            transform: translateY(100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    @keyframes slide-out {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(100%);
+        }
+    }
+}

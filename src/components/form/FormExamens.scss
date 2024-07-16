@@ -1,0 +1,41 @@
+.mf-k-form-container{
+    text-align: center;
+    margin-top: 50px;
+    & .k-form-inputs{
+        max-width: 1366px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        background: var(--keralty-boton-azul-a-0071a3) 0% 0% no-repeat padding-box;
+        background: #0071A3 0% 0% no-repeat padding-box;
+        opacity: 0.96;
+        & .k-select, .k-input{
+            margin: 5px 5px 5px;
+            display: inline-grid;
+            position: relative;
+        }
+        & .k-select-agreement{
+            display: inline-table;
+            width: 200px;
+            text-align: left;
+            &__help-text{
+                letter-spacing: 0px;
+                color: #757575;
+                opacity: 1;
+                font-family: "Proxima Nova", sans-serif;
+                font-size: 14px !important;
+                padding: 0px 25px;
+                display: flex;
+                margin-top: -8px;
+                display: block;
+            }
+        }
+    }
+}
+
+.k-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

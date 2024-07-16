@@ -1,0 +1,60 @@
+{
+  "name": "mf-modulo-citas",
+  "version": "0.1.0",
+  "proxy": "http://localhost:9097",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.10.3",
+    "@types/react": "^18.2.42",
+    "@types/react-dom": "^18.2.17",
+    "axios": "^1.6.2",
+    "buffer": "^6.0.3",
+    "date-fns": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "node": "^18.20.4",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.24.0",
+    "react-dom": "^18.2.0",
+    "react-embed": "^3.7.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "sass": "^1.69.5",
+    "typescript": "^5.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "overrides": {
+    "typescript": "^5.3.2"
+  },
+  "devDependencies": {
+    "@types/react-google-recaptcha": "^2.1.9"
+  }
+}

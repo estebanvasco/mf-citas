@@ -1,0 +1,35 @@
+.k-button-primary{
+    & button{
+        display: inline-flex;
+        height: 38px;
+        width: 130px;
+        padding: 14px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 22px;
+        background: #0071A3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.48px;
+        &:hover{
+            background-color: #002F87;
+        }
+        &:focus{
+            background-color: #002F87;
+        }
+    }
+    &--disabled{
+        background-color: #EEEEEE !important;
+        color: #B4B4B4 !important;
+        cursor: auto !important;
+    }
+}

@@ -1,0 +1,87 @@
+.k-select{
+    display: inline-grid;
+    text-align: justify;
+    width: 312px;
+    &__select-input{
+        max-width: 250px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #D9E0E6;
+        background: transparent;
+        margin-top: 4px;
+        padding: 0px 0px 0px 46px;
+        appearance: none;
+        cursor: pointer;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        &:focus{
+            outline: 1px solid #0071A3;
+        }
+        &:focus-visible{
+            outline: 1px solid #0071A3;
+        }
+    }
+    &--no-selected{
+        color: #757575;
+    }
+    &--selected{
+        color: #212121;
+    }
+    & label{
+        color: #002F87;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        & span{
+            color: #BE0020;
+            font-weight: 900;
+        }
+    }
+    & img{
+        position: absolute;
+        margin: 39px 10px 10px 12px;
+        z-index: 1;
+    }
+    &__icon-arrow-down{
+        right: 0;
+        width: 25px;
+        height: 25px !important;
+        z-index: -1 !important;
+    }
+    &__options-select{
+        position: absolute;
+        font-family: 'Proxima Nova', sans-serif;
+        color: #1F2937;
+        font-size: 16px !important;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding: 10px 0px;
+        background-color: #fff;
+        z-index: 2;
+        margin-top: 70px;
+        width: 100%;
+        & ul{
+            margin: 0;
+            padding: 0;
+            & li{
+                cursor: pointer;
+                padding: 10px 25px;
+                list-style: none;
+                &:hover{
+                    background-color: #EFEFEF;
+                }
+            }
+        }
+    }
+    &__img-dark{
+        filter: grayscale(100%) contrast(100%) brightness(2) invert(85%);
+    }
+}

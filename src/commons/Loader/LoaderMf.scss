@@ -1,0 +1,16 @@
+.k-loader{
+    background: #212121;
+    opacity: 53%;
+    position: fixed;
+    z-index: 1001;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    &__k-loader-gif{
+        width: 200px;
+        display: block;
+        position: relative;
+        margin: auto;
+        top: calc(50% - 100px);
+    }
+}

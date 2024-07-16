@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url('../src/assets/fonts/Proxima\ Nova\ Regular.otf')
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../src/assets/fonts/Roboto-Regular.ttf')
+}
+
+.App {
+  text-align: center;
+}
+

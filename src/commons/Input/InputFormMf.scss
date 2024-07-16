@@ -1,0 +1,48 @@
+.k-input{
+    text-align: justify;
+    width: 312px;
+    & input{
+        max-width: 174px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        border: 1px solid #D9E0E6;
+        background: #FFF;
+        margin-top: 4px;
+        padding: 0px 0px 0px 46px;
+        color: #212121;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &::placeholder{
+            color:#757575;
+        }
+        &:focus{
+            outline: 1px solid #0071A3;
+        }
+        &:focus-visible{
+            outline: 1px solid #0071A3;
+        }
+    }
+    & label{
+        color: #002F87;
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 19px;
+        & span{
+            color: #BE0020;
+            font-weight: 900;
+        }
+    }
+    & img{
+        position: absolute;
+        margin: 39px 10px 10px 12px;
+    }
+    &__img-dark{
+        filter: grayscale(100%) contrast(100%) brightness(2) invert(85%);
+    }
+}
