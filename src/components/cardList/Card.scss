@@ -1,0 +1,52 @@
+/* styles.css */
+
+.k-card-list {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .k-card {
+    background-color: #f0f0f0;
+    width: 342px;
+    height: 228px;
+    padding: 5px 5px 5px 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #757575A1;
+    border-radius: 5px;
+    opacity: 1;
+  }
+  
+  .k-cardtext{
+    width: 293px;
+    height: 105px;
+  }
+
+  .k-card__title{
+    width: 67px;
+    height: 18px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/22px var(--unnamed-font-family-proxima-nova);
+    color: var(--texto-oscuro-212121);
+    text-align: center;
+    font: normal normal bold 18px/22px Proxima Nova;
+    letter-spacing: 0px;
+    color: #212121;
+    text-transform: lowercase;
+  }
+
+  .k-card__description{
+    width: 245px;
+    height: 16px;
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/22px var(--unnamed-font-family-proxima-nova);
+    color: var(--texto-oscuro-212121);
+    text-align: center;
+    font: normal normal normal 16px/22px Proxima Nova;
+    letter-spacing: 0px;
+    color: #212121;
+  }
+
+
+  

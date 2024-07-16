@@ -1,5 +1,4 @@
 .k-select{
-    display: inline-grid;
     text-align: justify;
     width: 312px;
     &__select-input{
@@ -8,7 +7,7 @@
         flex-shrink: 0;
         border-radius: 5px;
         border: 1px solid #D9E0E6;
-        background: transparent;
+        background: #ffffff 0% 0% no-repeat padding-box;;
         margin-top: 4px;
         padding: 0px 0px 0px 46px;
         appearance: none;
@@ -34,7 +33,7 @@
         color: #212121;
     }
     & label{
-        color: #002F87;
+        color: #ffffff;
         font-family: 'Proxima Nova', sans-serif;
         font-size: 16px !important;
         font-style: normal;

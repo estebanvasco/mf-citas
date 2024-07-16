@@ -33,3 +33,9 @@
         cursor: auto !important;
     }
 }
+
+.k-button-form{
+    & button{
+    background: aquamarine;
+    }
+}

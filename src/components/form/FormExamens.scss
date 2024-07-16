@@ -2,21 +2,25 @@
     text-align: center;
     margin-top: 50px;
     & .k-form-inputs{
-        max-width: 1366px;
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
+        top: 2943px;
+        left: 0px;
+        height: 292px;
+        /* UI Properties */
         background: var(--keralty-boton-azul-a-0071a3) 0% 0% no-repeat padding-box;
         background: #0071A3 0% 0% no-repeat padding-box;
         opacity: 0.96;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         & .k-select, .k-input{
+            width: 300px;
             margin: 5px 5px 5px;
             display: inline-grid;
             position: relative;
         }
         & .k-select-agreement{
             display: inline-table;
-            width: 200px;
+            width: 300px;
             text-align: left;
             &__help-text{
                 letter-spacing: 0px;
@@ -33,9 +37,9 @@
     }
 }
 
-.k-card-container{
+.k-cards-container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }

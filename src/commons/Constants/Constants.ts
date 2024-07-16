@@ -42,7 +42,7 @@ export const CONSTANTS = {
         PLACEHOLDER_AGREEMENT: "Selecciona el convenio",
         HELP_TEXT: "Selecciona el convenio empresarial al que perteneces. En caso de no tener un convenio, selecciona la opción <strong>Particular 120.</strong>",
         TYC: "Acepto Términos y Condiciones",
-        BUTTON_FORM: "Continuar"
+        BUTTON_FORM: "Leer más"
     },
 }
 /* Lista tipos de identificación */
