@@ -20,13 +20,30 @@ interface CardData {
 
 const FormExamens: React.FC<LiferayProps> = (props) => {
 
+    const [campo, setCampo] = useState(true)
+
+    const toggleInput = () => {
+        setCampo(!campo)
+    }
+
     return (
         <> 
             <section className='mf-k-form-container'>
+                <ButtonFormMf
+                        txtButton={"Personas"}
+                        styleCustomize='k-button-form'
+                        disabledButton={false}
+                        onClick={() => {
+                            toggleInput()
+                        }}
+                    />
                 <h1>Exámenes</h1>
                 <div className="k-form-inputs">
                     <InputFormMf placeholderCustomize={""} styleCustomize={""} maxLenghtCustomize={6} typeInput={"number"} idInput={""} labelCustomize={"Código CUPS"} iconCustomize={""} altIcon={""}/>
-                    <InputFormMf placeholderCustomize={""} styleCustomize={""} maxLenghtCustomize={3} typeInput={"number"} idInput={""} labelCustomize={"Código Laboratorio"} iconCustomize={""} altIcon={""}/>
+                    {campo &&  (
+                        <InputFormMf placeholderCustomize={""} styleCustomize={""} maxLenghtCustomize={3} typeInput={"number"} idInput={""} labelCustomize={"Código Laboratorio"} iconCustomize={""} altIcon={""}/>
+                    )
+                    }
                     <InputFormMf placeholderCustomize={""} styleCustomize={''} maxLenghtCustomize={30} typeInput={"text"} idInput={""} labelCustomize={"Nombre de la prueba"} iconCustomize={""} altIcon={""}/>
                     <SelectFormMf styleCustomize={"k-select--no-selected"} valueInserted={""} idSelect={""} labelCustomize={"Tipo de muestra"} iconCustomize={""} altIcon={""} optionsSelect={[]} placeholderSelect={""}/>
                     <ButtonFormMf
